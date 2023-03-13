@@ -1,6 +1,6 @@
 <h1 align="center">Word Catcher</h1>
 
-<img src="./readme_assets/logo.png" width="100%">
+<img src="./readme_assets/word_catcher_logo.png" width="100%">
 
 ## **Description**
 
@@ -19,7 +19,7 @@ This program is written entirely in C# using the System.Text and System.Text.Reg
 
 ## **Project features**
 <p align="center">
-<img src="./readme_assets/flowchart.png" width="100%"></p>
+<img src="./readme_assets/flowchart_final_project.png" width="100%"></p>
 
 The number of characters in a word to be extracted from the text is set as a constant and is equal to three. But also, if necessary, this parameter can be set by the user or transferred from another program.
 
