@@ -13,10 +13,32 @@ Console.Clear();
 Console.WriteLine("Введите текст: ");
 string baseInput = Console.ReadLine();
 string textNoPunctuation = RemovePunctuationMarks(baseInput);
+string[] wordsArray = GetArrayFromText(textNoPunctuation);
+
+PrintStringArray(wordsArray);
 
 string RemovePunctuationMarks(string inText)
 {
     return Regex.Replace(inText, "[!\"#$%&'()*+,-./:;<=>?@\\[\\]^_`{|}~]", " ");
 }
 
-Console.WriteLine(textNoPunctuation);
+string[] GetArrayFromText(string inText)
+{
+    string[] array = inText.Split(" ", StringSplitOptions.RemoveEmptyEntries);
+    return array;
+}
+
+void PrintStringArray(string[] inArray)
+{
+    if (inArray.Length > 1)
+    {
+        Console.Write("[");
+        for (int i = 0; i < inArray.Length - 1; i++)
+        {
+            Console.Write($"\"{inArray[i]}\", ");
+        }
+        Console.WriteLine($"\"{inArray[inArray.Length - 1]}\"]");
+    }
+    else if (inArray.Length == 1) Console.WriteLine($"[\"{inArray[0]}\"]");
+    else Console.WriteLine("[]");
+}
