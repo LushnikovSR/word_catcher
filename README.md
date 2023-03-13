@@ -1,12 +1,12 @@
 <h1 align="center">Word Catcher</h1>
 
-<img src="./readme_assets/word_catcher_logo.png" width="70%">
+<h2 align="center"><img src="./readme_assets/word_catcher_logo.png" width="40%"></h2>
 
 ## **Description**
 
 
 <p align="center">
-<img src="./readme_assets/animation.gif" width="100%"></p>
+<img src="./readme_assets/animation.gif" width="80%"></p>
 
 Word Catcher implemented from scratch on C#. This is the final test work of the first block of the developer program at GeekBrains. First block of program including only base knowledge so don't expect too much from the source code xD.
 
@@ -19,7 +19,7 @@ This program is written entirely in C# using the System.Text and System.Text.Reg
 
 ## **Project features**
 <p align="center">
-<img src="./readme_assets/flowchart_final_project.png" width="100%"></p>
+<img src="./readme_assets/flowchart_final_project.png" width="80%"></p>
 
 The number of characters in a word to be extracted from the text is set as a constant and is equal to three. But also, if necessary, this parameter can be set by the user or transferred from another program.
 
