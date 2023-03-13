@@ -1,6 +1,6 @@
 <h1 align="center">Word Catcher</h1>
 
-<img src="./readme_assets/word_catcher_logo.png" width="100%">
+<img src="./readme_assets/word_catcher_logo.png" width="70%">
 
 ## **Description**
 
