@@ -8,6 +8,7 @@
 // ["Russia", "Denmark", "Kazan"] -> []
 
 using System.Text.RegularExpressions;
+using System.Text;
 
 Console.Clear();
 Console.WriteLine("Введите текст: ");
@@ -16,6 +17,12 @@ string textNoPunctuation = RemovePunctuationMarks(baseInput);
 string[] wordsArray = GetArrayFromText(textNoPunctuation);
 string[] resultArray = GetArrayGivenLengthElements(wordsArray);
 PrintStringArray(resultArray);
+Console.WriteLine();
+Console.WriteLine("Your word array is ready to be used.");
+Console.WriteLine();
+Console.WriteLine("Thank you for using Word Catcher!");
+string newString = new StringBuilder().Insert(0, "\r\n", 5).ToString();   
+Console.WriteLine(newString);
 
 string RemovePunctuationMarks(string inText)
 {
