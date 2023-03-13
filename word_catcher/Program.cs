@@ -7,6 +7,16 @@
 // ["1234", "1567", "-2", "computer science"] -> ["-2"]
 // ["Russia", "Denmark", "Kazan"] -> []
 
+using System.Text.RegularExpressions;
+
 Console.Clear();
 Console.WriteLine("Введите текст: ");
 string baseInput = Console.ReadLine();
+string textNoPunctuation = RemovePunctuationMarks(baseInput);
+
+string RemovePunctuationMarks(string inText)
+{
+    return Regex.Replace(inText, "[!\"#$%&'()*+,-./:;<=>?@\\[\\]^_`{|}~]", " ");
+}
+
+Console.WriteLine(textNoPunctuation);
