@@ -14,8 +14,8 @@ Console.WriteLine("Введите текст: ");
 string baseInput = Console.ReadLine();
 string textNoPunctuation = RemovePunctuationMarks(baseInput);
 string[] wordsArray = GetArrayFromText(textNoPunctuation);
-
-PrintStringArray(wordsArray);
+string[] resultArray = GetArrayGivenLengthElements(wordsArray);
+PrintStringArray(resultArray);
 
 string RemovePunctuationMarks(string inText)
 {
@@ -25,6 +25,23 @@ string RemovePunctuationMarks(string inText)
 string[] GetArrayFromText(string inText)
 {
     string[] array = inText.Split(" ", StringSplitOptions.RemoveEmptyEntries);
+    return array;
+}
+
+string[] GetArrayGivenLengthElements(string[] inArray)
+{
+    string[] array = new string[0];
+    int count = 0;
+    const int numCharacters = 3;
+    foreach (string item in inArray)
+    {
+        if (item.Length <= numCharacters)
+        {
+            Array.Resize(ref array, count + 1);
+            array[count] = item;
+            count++;
+        }
+    }
     return array;
 }
 
